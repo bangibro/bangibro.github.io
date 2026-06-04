@@ -655,6 +655,199 @@ section,
     line-height: 0;
   }
 
+  /*--------------------------------------------------------------
+  # About Section Custom Styles
+  --------------------------------------------------------------*/
+  .profile-image-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .profile-image {
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+    border: 4px solid var(--background-color);
+  }
+
+  .profile-image-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--accent-color), #00d2ff);
+    z-index: 0;
+    transform: rotate(-3deg);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(20, 157, 221, 0.3);
+  }
+
+  .profile-image-wrapper:hover .profile-image {
+    transform: scale(1.03) translate(5px, -5px);
+    box-shadow: -5px 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-image-wrapper:hover .profile-image-decoration {
+    transform: rotate(3deg) scale(0.98);
+    filter: hue-rotate(15deg);
+  }
+
+  .biodata-card {
+    background: var(--surface-color);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(20, 157, 221, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .biodata-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(20, 157, 221, 0.05) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .biodata-title {
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--heading-color);
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .biodata-subtitle {
+    color: #6c757d;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .biodata-subtitle .quote-left {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  .info-item-box {
+    background: rgba(244, 250, 253, 0.5);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .info-item-box:hover {
+    background: var(--surface-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 157, 221, 0.1);
+    border-color: rgba(20, 157, 221, 0.2);
+  }
+
+  .info-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(20, 157, 221, 0.1), rgba(0, 210, 255, 0.15));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 20px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
+
+  .info-item-box:hover .info-icon {
+    background: linear-gradient(135deg, var(--accent-color), #00d2ff);
+    color: var(--contrast-color);
+    transform: rotate(10deg) scale(1.05);
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8c98a5;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+
+  .info-value a {
+    color: var(--default-color);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .info-value a:hover {
+    color: var(--accent-color);
+  }
+
+  .hobbies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .hobby-badge {
+    background: rgba(20, 157, 221, 0.08);
+    color: var(--accent-color);
+    border: 1px solid rgba(20, 157, 221, 0.15);
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .hobby-badge i {
+    font-size: 14px;
+  }
+
+  .hobby-badge:hover {
+    background: linear-gradient(135deg, var(--accent-color), #00d2ff);
+    color: var(--contrast-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(20, 157, 221, 0.25);
+  }
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -691,38 +884,93 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skill-card {
+  background: var(--surface-color);
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(20, 157, 221, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-.skills .progress .skill {
+.skill-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent-color), #00d2ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(20, 157, 221, 0.08);
+  border-color: rgba(20, 157, 221, 0.15);
+}
+
+.skill-card:hover::after {
+  opacity: 1;
+}
+
+.skill-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(20, 157, 221, 0.1), rgba(0, 210, 255, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  flex: 0 0 auto;
+  transition: all 0.3s ease;
+}
+
+.skill-icon-wrap i,
+.skill-icon-wrap svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  fill: currentColor;
+  flex: 0 0 auto;
+  height: 22px;
+  line-height: 1;
+  width: 22px;
+}
+
+.skill-card:hover .skill-icon-wrap {
+  background: linear-gradient(135deg, var(--accent-color), #00d2ff);
+  color: var(--contrast-color);
+  transform: rotate(6deg) scale(1.05);
+}
+
+.skill-info h3 {
   color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
   font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  transition: color 0.3s ease;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skill-card:hover .skill-info h3 {
+  color: var(--accent-color);
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+.skill-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /*--------------------------------------------------------------

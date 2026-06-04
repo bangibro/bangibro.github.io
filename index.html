@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -64,8 +64,6 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <!--
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -100,7 +98,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>IBRO</h2>
-        <p>I'm <span class="typed" data-typed-items="Students, Electrical, Editor, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="a Student, an Engineer, an Editor, a Photographer">a Student</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -120,33 +118,101 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img2.jpg"
-                class="img-fluid rounded-4 mb-4 mb-lg-0"
-                style="max-width: 100%; object-fit: cover;"
-                alt="">
+        <div class="row gy-5 align-items-center justify-content-center">
+          <div class="col-lg-4 text-center text-lg-start">
+            <div class="profile-image-wrapper">
+              <img src="assets/img/my-profile-img2.jpg"
+                  class="img-fluid profile-image"
+                  style="max-width: 100%; object-fit: cover;"
+                  alt="Muhamad Ali Assyibro Malisi">
+              <div class="profile-image-decoration"></div>
+            </div>
           </div>
-          <div class="col-lg-8 content">
-            <h2>Biodata</h2>
-            <p class="fst-italic py-3">
-              Berikut merupakan tentang saya:
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nama:</strong> <span>Muhamad Ali Assyibro Malisi</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>NIM:</strong> <span>21060124130053</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>No. HP:</strong> <span>+62 822-1064-8275</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>aliassyibro23@gmail.com</span></li>
-                </ul>
+          <div class="col-lg-8">
+            <div class="biodata-card">
+              <h2 class="biodata-title">Biodata Pribadi</h2>
+              <p class="biodata-subtitle">
+                <i class="bi bi-quote quote-left"></i> Berikut merupakan informasi singkat tentang profil saya:
+              </p>
+              
+              <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-person-bounding-box"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">Nama Lengkap</span>
+                      <span class="info-value">Muhamad Ali Assyibro Malisi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-card-text"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">NIM</span>
+                      <span class="info-value">21060124130053</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">No. WhatsApp</span>
+                      <span class="info-value"><a href="https://wa.me/6282210648275" target="_blank" rel="noopener noreferrer">+62 822-1064-8275</a></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-envelope-paper-fill"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">Email</span>
+                      <span class="info-value"><a href="mailto:aliassyibro23@gmail.com">aliassyibro23@gmail.com</a></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">Instagram</span>
+                      <span class="info-value"><a href="https://instagram.com/m.assyibro/" target="_blank" rel="noopener noreferrer">@m.assyibro</a></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-item-box">
+                    <div class="info-icon">
+                      <i class="bi bi-controller"></i>
+                    </div>
+                    <div class="info-text">
+                      <span class="info-label">Hobi</span>
+                      <div class="hobbies-wrapper">
+                        <span class="hobby-badge"><i class="bi bi-camera"></i> Photography</span>
+                        <span class="hobby-badge"><i class="bi bi-film"></i> Editing</span>
+                        <span class="hobby-badge"><i class="bi bi-compass"></i> Travelling</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Instagram:</strong> <span>@m.assyibro</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Hobi:</strong> <span>Photography, Editing, Travelling</span>
-                </ul>
-              </div>
+            </div>
           </div>
         </div>
 
@@ -154,50 +220,7 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="987" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Friends</strong> <span>di seluruh Indonesia</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="999" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Tugas</strong> <span>diselesaikan</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32083" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Fans</strong> <span>mengikuti saya</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Girl Friend</strong> <span>karena gw jomblo wkwk</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
@@ -210,57 +233,79 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-content skills-animation">
+        <div class="row g-4 skills-content">
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Figma</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 24C10.21 24 12 22.21 12 20V16H8C5.79 16 4 17.79 4 20C4 22.21 5.79 24 8 24ZM4 12C4 9.79 5.79 8 8 8H12V16H8C5.79 16 4 14.21 4 12ZM4 4C4 1.79 5.79 0 8 0H12V8H8C5.79 8 4 6.21 4 4ZM12 0H16C18.21 0 20 1.79 20 4C20 6.21 18.21 8 16 8H12V0ZM20 12C20 14.21 18.21 16 16 16C13.79 16 12 14.21 12 12C12 9.79 13.79 8 16 8C18.21 8 20 9.79 20 12Z"></path></svg>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photography</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="skill-info">
+                <h3>Figma</h3>
+                <p>Design layout, wireframe, dan konsep visual.</p>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+          </div><!-- End Skills Item -->
 
-            <div class="progress">
-              <span class="skill"><span>CapCut</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <i class="bi bi-camera-video"></i>
               </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="skill-info">
+                <h3>Videography</h3>
+                <p>Mengambil footage, dokumentasi, dan visual bergerak.</p>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+          </div><!-- End Skills Item -->
 
-            <div class="progress">
-              <span class="skill"><span>Alight Motion</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <i class="bi bi-camera"></i>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Canva</span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="skill-info">
+                <h3>Photography</h3>
+                <p>Menangkap momen, komposisi, dan dokumentasi.</p>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+          </div><!-- End Skills Item -->
 
-          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <i class="bi bi-magic"></i>
+              </div>
+              <div class="skill-info">
+                <h3>Alight Motion</h3>
+                <p>Membuat animasi, motion, dan visual dinamis.</p>
+              </div>
+            </div>
+          </div><!-- End Skills Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <i class="bi bi-camera-reels"></i>
+              </div>
+              <div class="skill-info">
+                <h3>CapCut</h3>
+                <p>Editing video pendek, teaser, dan after movie.</p>
+              </div>
+            </div>
+          </div><!-- End Skills Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-card">
+              <div class="skill-icon-wrap">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="skill-info">
+                <h3>Canva</h3>
+                <p>Membuat konten publikasi dan desain sosial media.</p>
+              </div>
+            </div>
+          </div><!-- End Skills Item -->
 
         </div>
 
@@ -422,230 +467,6 @@ Terbiasa bekerja dalam tim, mengelola kebutuhan media acara, serta berkontribusi
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Portofolio saya.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Hobi</li>
-            <li data-filter=".filter-product">Travelling</li>
-            <li data-filter=".filter-branding">Organisasi</li>
-            <li data-filter=".filter-books">School</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Hobi -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/hobi-1.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/hobi-1.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/hobi-2.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/hobi-2.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <!-- Travelling -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/travelling-1.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/travelling-1.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/travelling-2.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/travelling-2.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/travelling-3.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/travelling-3.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/travelling-4.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/travelling-4.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/travelling-5.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/travelling-5.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <!-- Organisasi -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/panit-1.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/panit-1.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/panit-2.JPG" class="glightbox">
-                  <img src="assets/img/portfolio/panit-2.JPG" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/panit-3.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/panit-3.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <!-- School -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/school-1.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/school-1.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/school-2.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/school-2.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/school-3.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/school-3.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/school-4.JPG" class="glightbox">
-                  <img src="assets/img/portfolio/school-4.JPG" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content">
-                <a href="assets/img/portfolio/school-5.jpg" class="glightbox">
-                  <img src="assets/img/portfolio/school-5.jpg" class="img-fluid portfolio-img" alt="">
-                </a>
-              </div>
-            </div>
-
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Ga ada servis motor.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Kerja</a></h4>
-              <p class="description">Sangat sibuk.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Tugas</a></h4>
-              <p class="description">Pasti ada</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Pendapatan</a></h4>
-              <p class="description">YTTA</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Research</a></h4>
-              <p class="description">Iya, tapi males.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Ngoding</a></h4>
-              <p class="description">Setiap hari</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Manajemen waktu</a></h4>
-              <p class="description">ga tau, mau pulang aja.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
@@ -689,7 +510,7 @@ Terbiasa bekerja dalam tim, mengelola kebutuhan media acara, serta berkontribusi
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Dia orangnya baik banget dan juga ramah banget. Dia juga sangat ganteng dan suka membantu orang.</span>
+                  <span>Dia orangnya sangat baik dan ramah.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpeg" class="testimonial-img" alt="">
@@ -741,7 +562,7 @@ Terbiasa bekerja dalam tim, mengelola kebutuhan media acara, serta berkontribusi
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>You're so handsome. Sarangheo...</span>
+                  <span>You are very skilled, Sarangheo.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
